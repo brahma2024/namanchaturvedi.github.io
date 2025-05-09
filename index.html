@@ -8,91 +8,79 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; color: #212529; }
+    .main { display: flex; }
+    .sidebar { background-color: #f0f3f5; min-width: 300px; padding: 2rem 1rem; }
+    .sidebar h4 { color: #004080; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+    .sidebar img { max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 4px; margin-top: 1rem; }
+    .content { flex-grow: 1; padding: 2rem; }
     .header { background-color: #004080; color: white; padding: 2rem; }
     .section-title { color: #004080; border-bottom: 2px solid #004080; margin-bottom: 1rem; }
     .icon { color: #004080; margin-right: 0.5rem; }
-    .github-graph { border: 1px solid #ddd; border-radius: 6px; padding: 0.5rem; background: white; }
-    .resume-section { padding: 1.5rem 0; }
     a { color: #004080; }
   </style>
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="header text-center">
-      <h1>Naman Chaturvedi</h1>
-      <p>IT Enterprise Architect | Technical Product Strategist | AI & Platform Specialist</p>
-      <p>
-        <i class="fas fa-map-marker-alt"></i> Toronto, ON &nbsp; | &nbsp;
-        <i class="fas fa-envelope"></i> naman.chaturvedi@gmail.com &nbsp; | &nbsp;
-        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/namanchaturvedi" style="color: white;">LinkedIn</a> &nbsp; | &nbsp;
-        <i class="fab fa-github"></i> <a href="https://github.com/brahma2024" style="color: white;">GitHub</a>
-      </p>
-    </div>
+  <div class="header text-center">
+    <h1>Naman Chaturvedi</h1>
+    <p>IT Enterprise Architect | Technical Product Strategist | AI & Platform Specialist</p>
+    <p>
+      <i class="fas fa-map-marker-alt"></i> Toronto, ON &nbsp; | &nbsp;
+      <i class="fas fa-envelope"></i> naman.chaturvedi@gmail.com &nbsp; | &nbsp;
+      <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/namanchaturvedi" style="color: white;">LinkedIn</a> &nbsp; | &nbsp;
+      <i class="fab fa-github"></i> <a href="https://github.com/brahma2024" style="color: white;">GitHub</a>
+    </p>
+  </div>
 
-    <div class="container resume-section">
-      <h3 class="section-title">Summary</h3>
-      <p>Enterprise Architect and Product Strategist with 18+ years of experience designing, building, and scaling technology systems and platforms. Proven expertise in developing modular, API-driven architectures, implementing AI solutions (LLMs, RAG, multimodal), and modernizing legacy environments with secure, standards-driven practices. Extensive experience leading innovation for self-service API platforms, cloud-native systems, and composable architectures in large-scale enterprise settings. Strong communicator with track record of stakeholder alignment, executive presentations, and building governance processes around architectural standards and KPIs.</p>
-    </div>
-
-    <div class="container resume-section">
-      <h3 class="section-title">Key Technical Skills</h3>
-      <ul>
-        <li>Architecture & Platform Strategy: API Management (Apigee), Composable/Microservices Architecture, Modular Frameworks, CI/CD, GitOps</li>
-        <li>Programming & Web: Python, HTML, JavaScript, CSS, Git, DevOps Automation</li>
-        <li>Cloud & Infra: GCP, AWS, VMware, Middleware, Infrastructure Automation</li>
-        <li>AI/ML: RAG, LLMs, ChatGPT from scratch, Neural ODEs, Prompt Engineering</li>
-        <li>Security & Governance: API Security, Network Policies, Enterprise Governance Models</li>
-        <li>Stakeholder Engagement: Executive Presentations, Briefings, Architecture Workshops</li>
-      </ul>
-    </div>
-
-    <div class="container resume-section">
-      <h3 class="section-title">Work Experience</h3>
-      <h5>Bell Canada — Product & Technical Architect (Dec 2023 – Present)</h5>
-      <ul>
-        <li>Spearheaded design and delivery of a self-service API gateway on Apigee for internal developer teams; enabled scalable and secure onboarding, governance, and usage of APIs across Bell’s engineering units.</li>
-        <li>Built reusable policy configuration modules for rate limiting, API key security, JWT/OAuth2, caching, and mediation, accelerating time-to-value for internal consumers.</li>
-        <li>Defined and enforced architectural standards, metrics, and approval workflows to align development with Bell's enterprise technology governance model.</li>
-        <li>Established automation pipelines and GitOps workflows across SDLC, enabling consistent deployments and minimizing configuration drift.</li>
-      </ul>
-
-      <h5>Bell Canada — Service Lead, Product Innovation & 5G Edge (Oct 2020 – Dec 2023)</h5>
-      <ul>
-        <li>Delivered multiple B2C and B2B2C innovation pilots across 5G, VR/Metaverse, MEC, and Cloud Gaming domains, combining data-driven R&D with iterative delivery.</li>
-        <li>Proposed Smart Network for Gaming MVP to VP-level sponsors using market research and field trial data; optimized game routing latency via network edge.</li>
-        <li>Led infrastructure cost modeling for Bell TV edge caching (CPU, RAM, IOPS sweep); projected 25% backhaul savings using MEC deployments.</li>
-        <li>Designed immersive esports experience in VR, collaborating with internal media teams and external Esports organizers; delivered full demo using agile sprints.</li>
-        <li>Architected traffic monitoring solution for City of Toronto using 5G and IoT telemetry, developed using first-principles approach to stakeholder needs.</li>
-      </ul>
-    </div>
-
-    <div class="container resume-section">
-      <h3 class="section-title">AI/ML & Applied Research Projects</h3>
-      <ul>
-        <li>Built ChatGPT-like transformer-based chatbot from scratch to explore tokenization, attention, and positional encoding.</li>
-        <li>Created RAG pipeline using open-source LLMs (e.g. Mistral) with dynamic context retrieval via FAISS + LangChain.</li>
-        <li>Engineered Neural ODEs to solve time-variant control problems with applications in pricing models and predictive simulations.</li>
-        <li>Active on GitHub: Maintains repositories focused on inference workflows, transformer prototyping, and microservice infra design.</li>
-      </ul>
-    </div>
-
-    <div class="container resume-section">
-      <h3 class="section-title">Education</h3>
-      <ul>
-        <li>MBA, Technology Management – SPJIMR, Mumbai</li>
-        <li>B.Eng. Electrical & Electronics – Agra University</li>
-        <li>PG Diploma – VLSI Design, Sandeepani Institute</li>
-        <li>Certified: Blackbot Strategic Product Management</li>
-      </ul>
-    </div>
-
-    <div class="container resume-section">
-      <h3 class="section-title">GitHub Contributions</h3>
-      <div class="github-graph text-center">
-        <img src="https://ghchart.rshah.org/brahma2024" alt="GitHub Contributions" />
-        <p><small>github.com/brahma2024</small></p>
+  <div class="main">
+    <aside class="sidebar">
+      <h4>GitHub Contributions</h4>
+      <img src="https://ghchart.rshah.org/brahma2024" alt="GitHub Contributions" />
+      <h4 class="mt-4">API Architecture</h4>
+      <img src="https://user-images.githubusercontent.com/10220958/284749121-58a3f96c-0c6b-4d12-89d3-16a8d9b54b0b.png" alt="API Gateway Sketch" />
+    </aside>
+    <section class="content">
+      <div class="resume-section">
+        <h3 class="section-title">Summary</h3>
+        <p>Enterprise Architect and Product Strategist with 18+ years of experience designing, building, and scaling technology systems and platforms. Proven expertise in developing modular, API-driven architectures, implementing AI solutions (LLMs, RAG, multimodal), and modernizing legacy environments with secure, standards-driven practices.</p>
       </div>
-    </div>
+
+      <div class="resume-section">
+        <h3 class="section-title">Key Technical Skills</h3>
+        <ul>
+          <li>API Management (Apigee), Composable Architecture, CI/CD, GitOps</li>
+          <li>Python, HTML, JavaScript, CSS, Git, DevOps Automation</li>
+          <li>GCP, AWS, VMware, Infrastructure Automation</li>
+          <li>LLMs, RAG, Neural ODEs, Prompt Engineering</li>
+          <li>API Security, Governance Models, Workshop Facilitation</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="section-title">Recent Work</h3>
+        <p><strong>Bell Canada — API Product Owner</strong><br>
+        Led design of a secure, self-service API gateway on Apigee, including reusable policies, GitOps pipelines, and approval governance.</p>
+
+        <p><strong>Product Innovation & 5G</strong><br>
+        Delivered MVPs for immersive VR esports, edge caching for Bell TV, and real-time smart gaming optimization.</p>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="section-title">AI Projects</h3>
+        <ul>
+          <li>Built transformer-based ChatBot with custom tokenizer and attention layers</li>
+          <li>RAG pipeline using Mistral LLMs + FAISS + LangChain</li>
+          <li>ODE-based pricing simulations and inference graphs in Python</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3 class="section-title">Education</h3>
+        <ul>
+          <li>MBA, SPJIMR Mumbai | B.E., Agra University | VLSI, Sandeepani Institute</li>
+          <li>Certified Strategic Product Manager – Blackbot</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </body>
 </html>
